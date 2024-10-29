@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Unique Fruits</title>
+</head>
+<body>
+    <h1>Unique Fruits in Basket A and Basket B</h1>
+    <table border="1">
+        <thead>
+            <tr>
+                <th>Basket A</th>
+                <th>Basket B</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>
+                    <ul>
+                        {% for fruit in fruits_a %}
+                            <li>{{ fruit }}</li>
+                        {% endfor %}
+                    </ul>
+                </td>
+                <td>
+                    <ul>
+                        {% for fruit in fruits_b %}
+                            <li>{{ fruit }}</li>
+                        {% endfor %}
+                    </ul>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</body>
+</html>
